@@ -26,7 +26,7 @@ export default App
 const App = () => {
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename='/Restaurant-Menu'>
     <Routes>
       {/* <Route path='/' element={<LoginSignup />}></Route> */}
       <Route path='/' element={<Restaurant />}></Route>
