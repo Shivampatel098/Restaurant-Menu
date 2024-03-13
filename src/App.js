@@ -27,8 +27,8 @@ const App = () => {
     <>
     <BrowserRouter basename='/Restaurant-Menu'>
     <Routes>
-      <Route path='/' element={<LoginSignup />}></Route>
-      <Route path='/Restaurant' element={<Restaurant />}></Route>
+      {/* <Route path='/' element={<LoginSignup />}></Route> */}
+      <Route path='/' element={<Restaurant />}></Route>
       {/* <Route path='/Login-SignUp' element={<LoginSignup />}></Route> */}
       <Route path='/CheckAge' element={<UserForm />}></Route>
       <Route path='/ChatNumber' element={<UseEffect />}></Route>
