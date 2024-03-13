@@ -1,8 +1,10 @@
-// import React from 'react'
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Restaurant from './component/Basics/Restaurant';
 import UserForm from './component/Hooks/UseState';
 import UseEffect from './component/Hooks/UseEffect';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LoginSignup from './component/Basics/LoginSignup';
+
 /* const App = () => {
   return (
       <div>
@@ -19,25 +21,23 @@ const MyName = () => {
 export default App
 */
 // In this app.js file we write components.
-import React from 'react'
-import LoginSignup from './component/Basics/LoginSignup';
+
 
 const App = () => {
   return (
-    <>
-    <BrowserRouter basename='/Restaurant-Menu'>
+    
+    <BrowserRouter>
     <Routes>
       {/* <Route path='/' element={<LoginSignup />}></Route> */}
       <Route path='/' element={<Restaurant />}></Route>
-      {/* <Route path='/Login-SignUp' element={<LoginSignup />}></Route> */}
+      <Route path='/LoginSignup' element={<LoginSignup />}></Route>
       <Route path='/CheckAge' element={<UserForm />}></Route>
       <Route path='/ChatNumber' element={<UseEffect />}></Route>
 
     </Routes>
   </BrowserRouter>
-      {/* <UserForm /> */}
-      {/* <LoginSignup /> */}
-    </>
+      
+    
   );
 }
 
