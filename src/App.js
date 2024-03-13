@@ -25,7 +25,7 @@ import LoginSignup from './component/Basics/LoginSignup';
 const App = () => {
   return (
     <>
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/Restaurant-Menu'>
     <Routes>
       <Route path='/' element={<LoginSignup />}></Route>
       <Route path='/Restaurant' element={<Restaurant />}></Route>
